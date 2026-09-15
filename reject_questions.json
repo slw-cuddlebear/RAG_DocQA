@@ -1,0 +1,77 @@
+[
+  {
+    "question": "项目目前获得了哪些风险投资机构的投资？",
+    "should_reject": true,
+    "category": "文档未提及实体"
+  },
+  {
+    "question": "团队成员的毕业院校分别是什么？",
+    "should_reject": true,
+    "category": "文档未提及实体"
+  },
+  {
+    "question": "项目获得了哪些省级以上的创新创业大赛奖项？",
+    "should_reject": true,
+    "category": "文档未提及实体"
+  },
+  {
+    "question": "项目使用的开源大模型是什么？",
+    "should_reject": true,
+    "category": "文档未提及实体"
+  },
+  {
+    "question": "产品有没有做过 A/B 测试？结果如何？",
+    "should_reject": true,
+    "category": "文档未提及实体"
+  },
+  {
+    "question": "产品的月活跃用户数是多少？",
+    "should_reject": true,
+    "category": "文档未提及数字"
+  },
+  {
+    "question": "项目目前有多少位全职员工？",
+    "should_reject": true,
+    "category": "文档未提及数字"
+  },
+  {
+    "question": "试点学校的教师使用率达到了多少？",
+    "should_reject": true,
+    "category": "文档未提及数字"
+  },
+  {
+    "question": "学生练习数据已经积累了多少条？",
+    "should_reject": true,
+    "category": "文档未提及数字"
+  },
+  {
+    "question": "项目已投入的实际研发费用是多少？",
+    "should_reject": true,
+    "category": "文档未提及数字"
+  },
+  {
+    "question": "作业帮口算和班级优化大师的收费分别是多少？",
+    "should_reject": true,
+    "category": "边缘模糊问题"
+  },
+  {
+    "question": "和作业帮口算相比，本项目在用户量上差距有多大？",
+    "should_reject": true,
+    "category": "边缘模糊问题"
+  },
+  {
+    "question": "项目已经和多少家出版社签订了正式合作协议？",
+    "should_reject": true,
+    "category": "边缘模糊问题"
+  },
+  {
+    "question": "项目计划申请几项软件著作权？",
+    "should_reject": true,
+    "category": "边缘模糊问题"
+  },
+  {
+    "question": "未来是否会考虑融资？计划融多少？",
+    "should_reject": true,
+    "category": "边缘模糊问题"
+  }
+]
