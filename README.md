@@ -4,9 +4,13 @@
 
 ## 📸 项目概览
 
-| 问答模式 | 提问模式 |
-|---|---|
-| ![问答模式](docs/img_qa.png) | ![提问模式](docs/img_quiz.png) |
+### 问答模式
+
+![问答模式](docs/img_qa.png)
+
+### 提问模式
+
+![提问模式](docs/img_quiz.png)
 
 ## ✨ 功能特性
 
@@ -97,7 +101,6 @@ HF_HUB_DISABLE_SYMLINKS_WARNING=1
 ```
 
 > DeepSeek API Key 申请地址：https://platform.deepseek.com
-> ⚠️ `.env` 包含密钥，已被 `.gitignore` 忽略，请勿提交到仓库。
 
 ### 5. 启动应用
 
