@@ -44,19 +44,14 @@ def main():
         "--no-rerank", action="store_true",
         help="关闭 Rerank（用于消融实验）",
     )
-    parser.add_argument(
-        "--doc", default="bp.docx", help="待评估文档路径",
-    )
-    parser.add_argument(
-        "--questions", default="eval_questions.json",
-        help="测试集 JSON 路径",
-    )
+    parser.add_argument("--doc", default="data/bp.docx", help="待评估文档路径")
+    parser.add_argument("--questions", default="data/eval_questions.json", help="测试集 JSON 路径")
     args = parser.parse_args()
 
     use_rerank = not args.no_rerank
     output_file = (
-        "eval_result_with_rerank.csv" if use_rerank
-        else "eval_result_no_rerank.csv"
+        "results/eval_result_with_rerank.csv" if use_rerank
+        else "results/eval_result_no_rerank.csv"
     )
     mode_label = "加 Rerank" if use_rerank else "不加 Rerank"
 

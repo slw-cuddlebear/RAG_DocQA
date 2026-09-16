@@ -5,11 +5,6 @@
     "category": "文档未提及实体"
   },
   {
-    "question": "团队成员的毕业院校分别是什么？",
-    "should_reject": true,
-    "category": "文档未提及实体"
-  },
-  {
     "question": "项目获得了哪些省级以上的创新创业大赛奖项？",
     "should_reject": true,
     "category": "文档未提及实体"
@@ -25,6 +20,11 @@
     "category": "文档未提及实体"
   },
   {
+    "question": "团队成员中有几位是研究生？",
+    "should_reject": true,
+    "category": "文档未提及实体"
+  },
+  {
     "question": "产品的月活跃用户数是多少？",
     "should_reject": true,
     "category": "文档未提及数字"
@@ -35,17 +35,17 @@
     "category": "文档未提及数字"
   },
   {
-    "question": "试点学校的教师使用率达到了多少？",
-    "should_reject": true,
-    "category": "文档未提及数字"
-  },
-  {
-    "question": "学生练习数据已经积累了多少条？",
+    "question": "产品的用户留存率是多少？",
     "should_reject": true,
     "category": "文档未提及数字"
   },
   {
     "question": "项目已投入的实际研发费用是多少？",
+    "should_reject": true,
+    "category": "文档未提及数字"
+  },
+  {
+    "question": "项目是否有拓展海外市场的计划？",
     "should_reject": true,
     "category": "文档未提及数字"
   },

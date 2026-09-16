@@ -34,7 +34,7 @@ def is_rejected(answer: str) -> bool:
 
 def main():
     # 1. 构建 RAG 系统
-    docs = load_local_document("bp.docx")
+    docs = load_local_document("data/bp.docx")
     rag = RAGSystem(
         docs,
         chunk_size=DEFAULT_CHUNK_SIZE,
@@ -44,7 +44,7 @@ def main():
     print(f"切片数：{len(rag.chunks)}\n")
 
     # 2. 加载拒答测试集
-    with open("reject_questions.json", "r", encoding="utf-8") as f:
+    with open("data/reject_questions.json", "r", encoding="utf-8") as f:
         test_cases = json.load(f)
 
     # 3. 逐条测试
@@ -55,9 +55,7 @@ def main():
         q = case["question"]
         expected = case["should_reject"]
 
-        answer, _, _ = rag.answer(
-            q, use_rerank=True, rerank_top_k=DEFAULT_RERANK_TOP_K
-        )
+        answer, _, _ = rag.answer(q, use_rerank=True)
         actual = is_rejected(answer)
         hit = (actual == expected)
         correct += hit
@@ -94,7 +92,7 @@ def main():
         print(f"  {cat}: {stat['correct']}/{stat['total']}")
 
     pd.DataFrame(results).to_csv(
-        "eval_reject_result.csv", index=False, encoding="utf-8-sig"
+        "results/eval_reject_result.csv", index=False, encoding="utf-8-sig"
     )
     print("\n结果已保存到 eval_reject_result.csv")
 
